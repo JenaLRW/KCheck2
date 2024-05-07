@@ -1,4 +1,4 @@
-﻿using KCheck2;
+using KCheck2;
 using System;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
@@ -13,25 +13,23 @@ using System.Security.Cryptography.X509Certificates;
     for (int i = 0; i < numberOfRecords; i++)
     {
 
-        var demographics = new Demographics();
+        var tests = new Tests();
 
         Console.WriteLine("Enter the name of horse ");
 
-        demographics.Name = Console.ReadLine();
+        tests.Name = Console.ReadLine();
 
         Console.WriteLine("Enter the breed of horse ");
 
-        demographics.Breed = Console.ReadLine();
+        tests.Breed = Console.ReadLine();
 
         Console.WriteLine("Enter the sex of horse ");
 
-        demographics.Sex = Console.ReadLine();
+        tests.Sex = Console.ReadLine();
 
         Console.WriteLine("Enter the height of horse (in hands)");
 
-        demographics.Height = double.Parse(Console.ReadLine());
-
-        var tests = new Tests();
+        tests.Height = double.Parse(Console.ReadLine());
 
         Console.WriteLine("Enter the enrolling class ");
 
@@ -44,34 +42,3 @@ using System.Security.Cryptography.X509Certificates;
         recordList.Add(Tests);
 
     }
-
-
-
-//static void Main(string[] args)
-//static means the method 'Main' belongs
-//to the program class and not an object of the program class.  
-//void means this method does not have a return value. 
-//argument means when a parameter/value is passed to the method
-//Name is a parameter/value and <Horse name> is an argument. 
-
-//string name = Name.ToString();
-//string breed = Breed.ToString();
-//string sex = Sex.ToString();
-//string height = Height.ToString();
-//string classTests = ClassTests.ToString();
-//string qualifyingScore = QualifyingScore.ToString();
-
-
-//public override string ToString()
-
-//{
-//    return String.Format("Name : {0}");
-//}
-
-
-
-
-
-// Print out the list of records using Console.WriteLine()
-
-
